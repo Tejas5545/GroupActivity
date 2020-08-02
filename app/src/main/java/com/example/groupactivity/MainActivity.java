@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         edusn=findViewById(R.id.username);
         edpass=findViewById(R.id.password);
         btnlogin=findViewById(R.id.btnlogin);
+        splash.postDelayed(r,5000);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    new AlertDialog.Builder().setMessage("Invalid Credential").setPositiveButton("Try", new DialogInterface.OnClickListener() {
+                    new AlertDialog.Builder(getApplicationContext()).setMessage("Invalid Credential").setPositiveButton("Try", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             dialog.cancel();
