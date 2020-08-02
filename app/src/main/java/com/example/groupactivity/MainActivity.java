@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         edusn=findViewById(R.id.username);
         edpass=findViewById(R.id.password);
         btnlogin=findViewById(R.id.btnlogin);
-        splash.postDelayed(r,5000);`
+        splash.postDelayed(r,5000);
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
