@@ -1,14 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactFragment">
+    tools:context=".ContactFragment"
+    android:background="@drawable/grad_bg">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/contact"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"/>
+        <EditText
+            android:id="@+id/fname"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/et_bg"/>
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"/>
+        <EditText
+            android:id="@+id/emls"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/et_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"/>
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="15sp"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/et_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"/>
+        <EditText
+            android:id="@+id/msg"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:maxLines="30"
+
+            android:background="@drawable/et_bg"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/contact"
+        android:text="Login Now"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif-medium"
+        android:paddingRight="70dp"
+        android:paddingLeft="70dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>

@@ -32,21 +32,21 @@ public class MainActivity extends AppCompatActivity {
         splash.postDelayed(r,5000);
         if(edusn.getText().toString().equals("TejasPatel") && edpass.getText().toString().equals("123456"))
         {
-//            Intent i=new Intent(getApplicationContext(),About.class);
-//            startActivity(i);
-//            finish();
+            Intent i=new Intent(getApplicationContext(),AboutUs.class);
+            startActivity(i);
+            finish();
         }
         else if(edusn.getText().toString().equals("KoshaPatel") && edpass.getText().toString().equals("123456"))
         {
-//            Intent i=new Intent(getApplicationContext(),About.class);
-//            startActivity(i);
-//            finish();
+            Intent i=new Intent(getApplicationContext(),AboutUs.class);
+            startActivity(i);
+            finish();
         }
         else if(edusn.getText().toString().equals("ManjulaOdedra") && edpass.getText().toString().equals("123456"))
         {
-//            Intent i=new Intent(getApplicationContext(),About.class);
-//            startActivity(i);
-//            finish();
+            Intent i=new Intent(getApplicationContext(),AboutUs.class);
+            startActivity(i);
+            finish();
         }
     }
 }
