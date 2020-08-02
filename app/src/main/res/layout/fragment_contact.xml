@@ -4,13 +4,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactFragment"
-    android:background="@drawable/grad_bg">
+    android:background="@drawable/grad_bg"
+    >
 
+    <TextView
+        android:id="@+id/cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us "
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="sans-serif-light"/>
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
+        android:layout_margin="20sp"
         android:id="@+id/contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/cont"
+        android:layout_marginTop="20sp"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
