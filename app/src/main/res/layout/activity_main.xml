@@ -19,6 +19,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/ic_to_do_list"
+            android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
             android:scaleType="fitCenter"/>
         <RelativeLayout
@@ -33,6 +34,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20sp"
                 android:text="Login"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-light"
                 android:textColor="@color/colorAccent"
                 android:textSize="30dp"/>
             <LinearLayout
