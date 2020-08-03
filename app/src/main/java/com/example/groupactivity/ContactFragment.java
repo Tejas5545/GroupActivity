@@ -41,7 +41,7 @@ public class ContactFragment extends Fragment {
         btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Sending function goes here",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(),"Sending function goes here!",Toast.LENGTH_SHORT).show();
             }
         });
     }
