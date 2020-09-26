@@ -17,7 +17,6 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/colorAccent"
         android:fontFamily="sans-serif-light"/>
-    <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_margin="20sp"
         android:id="@+id/contact"
@@ -100,6 +99,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:textSize="15sp"
+            android:inputType="textMultiLine"
             android:textColor="@color/colorAccent"
             android:fontFamily="sans-serif-light"
             android:paddingLeft="15dp"

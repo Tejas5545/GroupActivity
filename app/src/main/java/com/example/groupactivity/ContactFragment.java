@@ -2,6 +2,7 @@ package com.example.groupactivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -41,8 +42,16 @@ public class ContactFragment extends Fragment {
         btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(),"Sending function goes here!",Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getContext(),"Sending function goes here!",Toast.LENGTH_SHORT).show();
+                Intent i =new Intent(Intent.ACTION_SENDTO);
+                i.putExtra(Intent.EXTRA_EMAIL,eml.getText().toString());
+                i.putExtra(Intent.EXTRA_SUBJECT,"Feedback");
+                i.putExtra(Intent.EXTRA_TEXT,msgs.getText().toString());
+                i.setData(Uri.parse("mailto:tejasbhut123@gmail.com"));
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
             }
         });
     }
+
 }
